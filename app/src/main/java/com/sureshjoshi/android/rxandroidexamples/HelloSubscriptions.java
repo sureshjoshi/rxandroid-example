@@ -10,7 +10,7 @@ import butterknife.OnClick;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.subscriptions.CompositeSubscription;
 
-public class MainActivity extends Activity {
+public class HelloSubscriptions extends Activity {
 
     CompositeSubscription mSubscriptions;
 
@@ -45,7 +45,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_hello_subscriptions);
         ButterKnife.bind(this);
         mSubscriptions = new CompositeSubscription();
 
